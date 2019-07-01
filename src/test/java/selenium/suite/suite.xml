@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoSuite" verbose="1" parallel="methods" thread-count="2" >
+	<!-- <test name="Nopackage"> -->
+	<!-- <classes> -->
+	<!-- <class name="NoPackageTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+	<test name="Regression1" >
+		<classes>
+			<class name="selenium.testngdemo.TestNGDemo">
+				<methods>
+<!-- 					<include name="demoTest"> -->
+<!-- 						<parameter name="url" value="http://www.youtube.com" /> -->
+<!-- 					</include> -->
+					<include name="demoTest3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
